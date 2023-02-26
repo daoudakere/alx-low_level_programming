@@ -1,7 +1,6 @@
-#!/bin/bash
 #include <stdio.h>
 /**
- * main - Entry
+ * main - A program that prints the size of various types on the computer
  * Return: Alway 0
  */
 int main(void)
@@ -12,10 +11,10 @@ int main(void)
 	long long int d;
 	float f;
 
-	printf("Size of a char: %i byte(s)\n", (unsigned long)sizeof(a));
-	printf("Size of an int: %i byte(s)\n", (unsigned long)sizeof(b));
-	printf("Size of a long int: %i byte(s)\n", (unsigned long)sizeof(c));
-	printf("Size of a long long int: %i byte(s)\n", (unsigned long)sizeof(d));
-	print("Sise of a float: %i byte(s)\n", (unsigned long)sizeof(f));
-	return (0);
+printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(a));
+printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(b));
+printf("Size of a long int: %lu bytes(s)\n", (unsigned long)sizeof(c));
+printf("Size of a long long int: %lu bytes(s)\n", (unsigned long)sizeof(d));
+printf("Sise of a float: %lu bytes(s)\n", (unsigned long)sizeof(f));
+return (0);
 }
